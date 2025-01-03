@@ -1487,14 +1487,6 @@ Tab:AddToggle({
     Name = "Auto Any Farm Tool",
     Default = false,
     Callback = function(state)
-            local args = {
-                [1] = "rep"
-            }
-    
-            game:GetService("Players").LocalPlayer.muscleEvent:FireServer(unpack(args))
-    
-            game:GetService("RunService").RenderStepped:Wait()
-        end
     end
     })
 
